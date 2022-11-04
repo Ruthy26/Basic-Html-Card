@@ -7,50 +7,87 @@
     <title>Basic HTML Card</title>
     <style>
         body {
-         font-family:  "Lucida Console", "Courier New", monospace;
+         /*font-family:  "Lucida Console", "Courier New", monospace;*/
+         font-family: 'GT Eesti Display',-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
          border-top: 1px solid gainsboro;
-         border-right: 1.5px solid gray;
+         border-right: 2px solid gray;
          border-bottom: 1px solid gainsboro;
-         border-left: 1.5px solid gray;
+         border-left: 2px solid gray;
          border-radius: 20px;
-         max-width: 23%;
-         height: 550px;
+         max-width: 21%;
+         height: 900px;
          padding: 20px;
          margin: 50px;
          margin-left: 100px;
+         margin-top: 100px;
+       }
+
+       .paragraph {
+             font-weight: 600;
+             line-height: 20px;
+             font-size: 22px;
+             color: #272727;
+       }
+
+       .paragraph1 {
+             font-weight: 600;
+             line-height: 25px;
+             font-size: 17px;
+             color: #565656;
+       }
+
+       h1{
+           font-weight: 900;
+           font-size: 55px;
+           padding-top: 65px;
+           padding-bottom: 30px;
+       }
+
+       #border1 {
+          border: 1px solid black;
+          border-radius: 30px;
+          width: 250px;
+          height: 40px;
+          text-align: center;
+          padding-top: 15px;
+          font-size: 19px;
+       }
+
+       .border2 {
+        border-bottom: 2px dotted black;
        }
  </style>
 </head>
 <body>
 
-    <p>
+    <h2 style="color: #565656;">
         Free
-    </p>
+    </h2>
 
-    <p>
+    <p class="paragraph">
         For individuals or very small teams just getting started with Airtable
     </p>
 
-    <h1>
+    <h1 >
         Free
     </h1>
 
-    <p>
+    <p id="border1">
         Sign up
     </p>
 
-    <p>
-
-           Free includes:  <br/>
+    <h4 style="color: #565656;"> Free includes:  <br/>
            <br/>
+    </h4>
+   <p class="paragraph1">
             ✔ Unlimited bases  <br/>
             ✔ Up to 5 creators or editors  <br/>
             ✔ Unlimited commenter & real-only users  <br/>
-            ✔ Interface Designer  <br/>
-            ✔ 1 extension per base  <br/>
+            ✔ <span class="border2">Interface Designer </span> <br/>
+            ✔ 1 <span class="border2">extension</span> per base  <br/>
             ✔ 1 sync integration  <br/>
             ✔ 1,200 records per base  <br/>
             ✔ 2GB of attachments per base  <br/>
-    </p>
+   </p>
 </body>
 </html>
